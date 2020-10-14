@@ -253,13 +253,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 64
-    m_Alignment: 4
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Waddle\t"
+  m_Text: Waddle
 --- !u!222 &393333069
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -280,6 +280,7 @@ GameObject:
   - component: {fileID: 481736750}
   - component: {fileID: 481736749}
   - component: {fileID: 481736748}
+  - component: {fileID: 481736752}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -370,6 +371,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &481736752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481736747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b6ba42b357704a768471395badb857b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &623750971
 GameObject:
   m_ObjectHideFlags: 0
@@ -452,7 +465,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 623750974}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 481736752}
+        m_TargetAssemblyTypeName: TitleButtons, Assembly-CSharp
+        m_MethodName: OpenJoinGameMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &623750974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -573,7 +598,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 666914192}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 481736752}
+        m_TargetAssemblyTypeName: TitleButtons, Assembly-CSharp
+        m_MethodName: OpenHostGameMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &666914192
 MonoBehaviour:
   m_ObjectHideFlags: 0
