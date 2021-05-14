@@ -1,9 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public abstract class MiniGame : MonoBehaviour
 {
+    public Text CountDownText;
+
+    protected bool IsGameStarted;
+    protected bool IsGameEnded;
+    protected static float TimeLeft;
+
     void Start()
     {
         StartGame();
@@ -22,4 +29,18 @@ public abstract class MiniGame : MonoBehaviour
     public void EndGame() {
         // Return to lobby
     }
+
+    #region Shared Protected Functions
+    protected void UpdateBackgroundColor(Color color) {
+        Camera.main.backgroundColor = color;
+    }
+
+
+    protected float CountDown(float currentTime) {
+        var updatedTime = currentTime - Time.deltaTime;
+        CountDownText.text = TimeLeft.ToString("F2");
+
+        return updatedTime;
+    }
+    #endregion
 }

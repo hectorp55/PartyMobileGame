@@ -1,20 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-
 
 public class QuickDraw : MiniGame
 {
-    private static float TimeLeft = 3f;
-
-    private const float ShootingOrientation = 0.5f;
-    private const float ReadyOrientation = 0.9f;
-
-    public bool IsGameStarted;
-    public bool IsGameEnded;
-    public Text CountDownText;
     public bool IsShooting;
+
+    void Awake() {
+        TimeLeft = 3f;
+    }
 
     public override void StartGame()
     {
@@ -24,7 +18,12 @@ public class QuickDraw : MiniGame
     void Update() {
         if (IsGameStarted && !IsGameEnded) {
             UpdateBackgroundColor(Color.green);
+            
+            var oldTime = TimeLeft;
             TimeLeft = CountDown(TimeLeft);
+            if (TimeLeft.ToString().Substring(0, 1) != oldTime.ToString().Substring(0, 1)) {
+                Handheld.Vibrate();
+            }
             CountDownText.text = TimeLeft.ToString("F2");
 
             if (IsPlayerShooting()) {
@@ -35,7 +34,10 @@ public class QuickDraw : MiniGame
         }
     }
 
-    #region Private Functions
+    #region Private Members
+    private const float ShootingOrientation = 0.5f;
+    private const float ReadyOrientation = 0.9f;
+
     private IEnumerator StartWhenPlayerIsReady() { 
         yield return new WaitUntil(() => IsPlayerReady() == true); 
 
@@ -50,15 +52,6 @@ public class QuickDraw : MiniGame
         return false;
     }
 
-    private float CountDown(float currentTime) {
-        var newTime = currentTime - Time.deltaTime;
-        if (currentTime.ToString().Substring(0, 1) != newTime.ToString().Substring(0, 1)) {
-            Handheld.Vibrate();
-        }
-
-        return newTime;
-    }
-
     private bool IsPlayerReady() {
         // Make sure player has not moved from this position for atleast a second?
         if (Input.acceleration.y > ReadyOrientation) {
@@ -66,10 +59,6 @@ public class QuickDraw : MiniGame
         }
     
         return false;
-    }
-
-    private void UpdateBackgroundColor(Color color) {
-        Camera.main.backgroundColor = color;
     }
     #endregion
 }
