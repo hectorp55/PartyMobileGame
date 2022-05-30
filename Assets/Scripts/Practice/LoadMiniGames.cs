@@ -15,6 +15,7 @@ public class LoadMiniGames : MonoBehaviour
         foreach (string directory in minigame_directories) {
             GameObject new_minigame_button = (GameObject)Instantiate(minigame_button_prefab, transform);               
             string name = directory.Substring(PATH_TO_MINIGAMES.Length + 1);
+            name = name.Replace('-', ' ');
             new_minigame_button.GetComponentInChildren<TextMeshProUGUI>().text = name;
         }
     }  
