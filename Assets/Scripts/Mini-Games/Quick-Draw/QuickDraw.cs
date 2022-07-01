@@ -28,9 +28,15 @@ public class QuickDraw : MiniGame
 
             if (IsPlayerShooting()) {
                 UpdateBackgroundColor(Color.red);
-                ReportScore(TimeLeft);
                 IsGameEnded = true;
+                EndGame(TimeLeft, this);
             }
+        }
+    }
+
+    public override string Name {
+        get {
+            return MiniGameNames.QuickDraw;
         }
     }
 

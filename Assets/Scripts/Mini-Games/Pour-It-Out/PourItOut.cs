@@ -37,9 +37,15 @@ public class PourItOut : MiniGame
 
             PourCup.value = GetCupAmountAfterPour(PourCup.value);
             if (TimeLeft < 0) {
-                ReportScore(CalculateScore(GoalAmountInCup, PourCup.value));
                 IsGameEnded = true;
+                EndGame(CalculateScore(GoalAmountInCup, PourCup.value), this);
             }
+        }
+    }
+
+    public override string Name {
+        get {
+            return MiniGameNames.PourItOut;
         }
     }
 

@@ -9,6 +9,9 @@ public class SceneManager
     public const string TitleMenu = "Title";
     public const string HostGameMenu = "Host";
     public const string JoinGameMenu = "Join";
+    public const string PracticeGameMenu = "Practice";
+    public const string HighScoreMenu = "Report-Score";
+
     // ===========================================
 
     public static void LoadScene(string sceneName) {

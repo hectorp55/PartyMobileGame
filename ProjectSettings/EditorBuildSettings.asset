@@ -14,4 +14,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Join.unity
     guid: 064882a297f9749fdb75f28b24c50fa8
+  - enabled: 1
+    path: Assets/Scenes/Mini-Games/Least-Picked-Number.unity
+    guid: 0536838471ab94329a104f792d4fc95b
+  - enabled: 1
+    path: Assets/Scenes/Mini-Games/Pour-It-Out.unity
+    guid: 3826d4d6096cc47348103effc8cee009
+  - enabled: 1
+    path: Assets/Scenes/Mini-Games/Quick-Draw.unity
+    guid: 7cec6e6ef53cb491cb12dc15930a5d73
+  - enabled: 1
+    path: Assets/Scenes/Mini-Games/Shake-It.unity
+    guid: 4dfc711f299a940ec9ad5631b84d60be
+  - enabled: 1
+    path: Assets/Scenes/Practice.unity
+    guid: 2db48f2c0b9400046b0599f6e9b5b2f8
+  - enabled: 1
+    path: Assets/Scenes/Report-Score.unity
+    guid: 09ad1f59dbf46f74b9d2f6b0a4367b63
   m_configObjects: {}

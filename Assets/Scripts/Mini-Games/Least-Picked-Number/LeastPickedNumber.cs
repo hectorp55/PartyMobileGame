@@ -24,14 +24,20 @@ public class LeastPickedNumber : MiniGame
             TimeLeft = CountDown(TimeLeft);
 
             if (TimeLeft < 0) {
-                ReportScore(NumberSlider.value);
                 IsGameEnded = true;
+                EndGame(NumberSlider.value, this);
             }
         }
     }
 
     public void UpdateSelectedNumber() {
         SelectedNumber.text = NumberSlider.value.ToString();
+    }
+
+    public override string Name {
+        get {
+            return MiniGameNames.LeastPickedNumber;
+        }
     }
 
     #region 

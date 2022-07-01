@@ -11,4 +11,8 @@ public class TitleButtons : MonoBehaviour
     public void OpenJoinGameMenu() {
         SceneManager.LoadScene(SceneManager.JoinGameMenu);
     }
+
+    public void OpenPracticeGameMenu() {
+        SceneManager.LoadScene(SceneManager.PracticeGameMenu);
+    }
 }

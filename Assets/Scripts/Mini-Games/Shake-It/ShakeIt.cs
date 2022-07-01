@@ -34,9 +34,15 @@ public class ShakeIt : MiniGame
             }
 
             if (TimeLeft < 0) {
-                ReportScore(Score);
                 IsGameEnded = true;
+                EndGame(Score, this);
             }
+        }
+    }
+
+    public override string Name {
+        get {
+            return MiniGameNames.ShakeIt;
         }
     }
 

@@ -19,15 +19,13 @@ public abstract class MiniGame : MonoBehaviour
     // Used to start the minigame
     public abstract void StartGame();
 
-    // Used to report score to server when minigame is completed
-    public void ReportScore(float score) {
-        Debug.Log($"Score:  {score}");
-        // Report score to server for playerid
-
+    public void EndGame(float score, MiniGame minigameName) {
+        GameManager.instance.EndGame(score, this);
+        // Return to lobby
     }
 
-    public void EndGame() {
-        // Return to lobby
+    public abstract string Name {
+        get;
     }
 
     #region Shared Protected Functions
