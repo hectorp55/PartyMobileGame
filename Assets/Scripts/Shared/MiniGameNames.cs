@@ -9,6 +9,8 @@ public class MiniGameNames
     public const string QuickDraw = "Quick-Draw";
     public const string ShakeIt = "Shake-It";
     public const string PourItOut = "Pour-It-Out";
+    public const string SpeedText = "Speed-Text";
+    public const string QuickMath = "Quick-Math";
 
     // ===========================================
 }

@@ -32,4 +32,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Report-Score.unity
     guid: 09ad1f59dbf46f74b9d2f6b0a4367b63
+  - enabled: 1
+    path: Assets/Scenes/Mini-Games/Quick-Math.unity
+    guid: 13deec21573d2d94897f7d73782e71c3
+  - enabled: 1
+    path: Assets/Scenes/Mini-Games/Speed-Text.unity
+    guid: 1a1ec38bbde73134bb1f7da421d58efa
   m_configObjects: {}
