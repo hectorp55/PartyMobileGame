@@ -23,7 +23,6 @@ public class QuickMath : MiniGame
 
         MathsNumbers = GenerateMathsArray(MathCounts);
         CorrectAnswer = MathsNumbers.Sum();
-        print(CorrectAnswer);
     }
 
     public void OnDestroy() {
@@ -37,9 +36,6 @@ public class QuickMath : MiniGame
     void Update() {
         if (IsGameStarted && !IsGameEnded) {
             TimeLeft = CountDown(TimeLeft);
-
-            
-            print(MyAnswer);  
 
             if (TimeLeft < 0) {
                 IsGameEnded = true;

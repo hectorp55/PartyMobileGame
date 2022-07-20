@@ -11,6 +11,7 @@ public class MiniGameNames
     public const string PourItOut = "Pour-It-Out";
     public const string SpeedText = "Speed-Text";
     public const string QuickMath = "Quick-Math";
+    public const string PotatoCounter = "Potato-Counter";
 
     // ===========================================
 }
