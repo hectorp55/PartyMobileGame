@@ -7,5 +7,9 @@ public class SharedButtons : MonoBehaviour
     public void BackToTitleScreen() {
         SceneManager.LoadScene(SceneManager.TitleMenu);
     }
+
+    public void StartVersusGame() {
+        SceneManager.LoadScene(SceneManager.VersusGameMenu);
+    }
     
 }

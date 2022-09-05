@@ -11,6 +11,7 @@ public class SceneManager
     public const string JoinGameMenu = "Join";
     public const string PracticeGameMenu = "Practice";
     public const string HighScoreMenu = "Report-Score";
+    public const string VersusGameMenu = "Versus";
 
     // ===========================================
 

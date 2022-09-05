@@ -41,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mini-Games/Potato-Counter.unity
     guid: c99a3cecf6d3c624885f72fd2cb1cce5
+  - enabled: 1
+    path: Assets/Scenes/Versus.unity
+    guid: ec5c889af7ff6a6408518f21581887b8
   m_configObjects: {}

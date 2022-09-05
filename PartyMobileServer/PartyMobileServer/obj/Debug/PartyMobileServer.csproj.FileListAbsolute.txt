@@ -1,0 +1,15 @@
+C:\Users\Hector\Code\PartyMobileGame\PartyMobileServer\PartyMobileServer\bin\Debug\PartyMobileServer.dll
+C:\Users\Hector\Code\PartyMobileGame\PartyMobileServer\PartyMobileServer\bin\Debug\PartyMobileServer.pdb
+C:\Users\Hector\Code\PartyMobileGame\PartyMobileServer\PartyMobileServer\bin\Debug\DarkRift.dll
+C:\Users\Hector\Code\PartyMobileGame\PartyMobileServer\PartyMobileServer\bin\Debug\DarkRift.Server.dll
+C:\Users\Hector\Code\PartyMobileGame\PartyMobileServer\PartyMobileServer\bin\Debug\PartyMobileModels.dll
+C:\Users\Hector\Code\PartyMobileGame\PartyMobileServer\PartyMobileServer\bin\Debug\PartyMobileModels.pdb
+C:\Users\Hector\Code\PartyMobileGame\PartyMobileServer\PartyMobileServer\bin\Debug\DarkRift.pdb
+C:\Users\Hector\Code\PartyMobileGame\PartyMobileServer\PartyMobileServer\bin\Debug\DarkRift.xml
+C:\Users\Hector\Code\PartyMobileGame\PartyMobileServer\PartyMobileServer\bin\Debug\DarkRift.Server.pdb
+C:\Users\Hector\Code\PartyMobileGame\PartyMobileServer\PartyMobileServer\bin\Debug\DarkRift.Server.xml
+C:\Users\Hector\Code\PartyMobileGame\PartyMobileServer\PartyMobileServer\obj\Debug\PartyMobileServer.csproj.AssemblyReference.cache
+C:\Users\Hector\Code\PartyMobileGame\PartyMobileServer\PartyMobileServer\obj\Debug\PartyMobileServer.csproj.CoreCompileInputs.cache
+C:\Users\Hector\Code\PartyMobileGame\PartyMobileServer\PartyMobileServer\obj\Debug\PartyMobileServer.csproj.CopyComplete
+C:\Users\Hector\Code\PartyMobileGame\PartyMobileServer\PartyMobileServer\obj\Debug\PartyMobileServer.dll
+C:\Users\Hector\Code\PartyMobileGame\PartyMobileServer\PartyMobileServer\obj\Debug\PartyMobileServer.pdb
